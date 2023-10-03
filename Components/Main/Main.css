@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Puppies+Play&display=swap');
+
+
+.title {
+    font-size: 6rem;
+    font-family: 'Puppies Play', cursive;
+    color: rgb(187, 85, 190);
+    margin-bottom: 0;
+}

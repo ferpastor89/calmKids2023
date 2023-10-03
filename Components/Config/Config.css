@@ -1,0 +1,69 @@
+.seteoLugar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  
+  select {
+    width: 4rem;
+    height: 2rem;
+    background-color: red;
+    border-radius: 5rem;
+  }  
+  
+  .config-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .config-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .config-toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color:red;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  .config-toggle input:checked + .config-toggle-slider {
+    background-color: #2196F3;
+  }
+  
+  .config-toggle input:focus + .config-toggle-slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  .config-toggle input:checked + .config-toggle-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .config-toggle-slider.round {
+    border-radius: 34px;
+  }
+  
+  .config-toggle-slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .option-text {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+  }
